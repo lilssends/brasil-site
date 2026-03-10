@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Turismo no Brasil — Brasil Cultural</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Brasil Cultural</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="culinaria.html">Culinária</a></li>
+        <li class="nav-item"><a class="nav-link active" href="turismo.html">Turismo</a></li>
+        <li class="nav-item"><a class="nav-link" href="fauna.html">Fauna</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <img src="https://images.unsplash.com/photo-1544982503-9f984c14501a?w=1600&h=700&fit=crop&crop=center"
+       alt="Cataratas do Iguaçu" class="bg-img">
+  <div class="container">
+    <div class="page-header-content">
+      <p class="eyebrow">Destinos</p>
+      <h1>Turismo no Brasil</h1>
+      <div class="header-line"></div>
+    </div>
+  </div>
+</header>
+
+<!-- INTRO -->
+<section class="section-sm section-creme">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center reveal">
+        <span class="eyebrow-label">Destinos Inesquecíveis</span>
+        <h2 class="section-title">Do litoral à floresta amazônica</h2>
+        <div class="gold-line center"></div>
+        <p style="color:var(--texto-suave);font-size:1.05rem;line-height:1.85;">
+          O Brasil oferece uma diversidade de destinos turísticos que vai desde praias paradisíacas e florestas tropicais até desertos de dunas e cidades históricas. Um país que cabe o mundo inteiro dentro de suas fronteiras.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTAQUE: CRISTO REDENTOR -->
+<section class="section-sm section-white">
+  <div class="container">
+    <div class="row g-0 align-items-stretch" style="box-shadow:var(--sombra-hover);overflow:hidden;">
+      <div class="col-lg-6">
+        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=900&h=600&fit=crop&crop=center"
+             alt="Cristo Redentor"
+             style="width:100%;height:100%;min-height:420px;object-fit:cover;display:block;">
+      </div>
+      <div class="col-lg-6" style="background:#fff;padding:4rem 3.5rem;display:flex;flex-direction:column;justify-content:center;">
+        <span class="eyebrow-label">Destaque Principal</span>
+        <h2 class="section-title">Cristo Redentor</h2>
+        <div class="gold-line"></div>
+        <p style="color:var(--texto-suave);font-size:1rem;line-height:1.85;margin-bottom:1.5rem;">
+          Eleito uma das Sete Maravilhas do Mundo Moderno em 2007, o Cristo Redentor é o cartão-postal mais icônico do Brasil. Com 30 metros de altura, posicionado no topo do Morro do Corcovado a 710m de altitude, oferece uma vista panorâmica espetacular do Rio de Janeiro.
+        </p>
+        <p style="color:var(--texto-suave);font-size:1rem;line-height:1.85;">
+          Construída entre 1922 e 1931, é obra do engenheiro Heitor da Silva Costa e do escultor francês Paul Landowski. Recebe mais de 2 milhões de visitantes por ano.
+        </p>
+        <button class="btn-verde d-inline-block mt-3" style="align-self:flex-start;border:none;cursor:pointer;"
+                data-bs-toggle="modal" data-bs-target="#modalCristo">
+          Saiba Mais
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GRID DE DESTINOS -->
+<section class="section section-creme" id="destinos">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow-label">Pelo Brasil</span>
+      <h2 class="section-title">Outros Destinos Imperdíveis</h2>
+      <div class="gold-line center"></div>
+    </div>
+    <div class="row g-4">
+
+      <!-- Iguaçu -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Paraná</span>
+            <img src="https://images.unsplash.com/photo-1544982503-9f984c14501a?w=800&h=500&fit=crop&crop=center" alt="Cataratas do Iguaçu">
+          </div>
+          <div class="card-body">
+            <h5>Cataratas do Iguaçu</h5>
+            <p>Um dos maiores conjuntos de quedas d'água do planeta, com 275 quedas ao longo de quase 3 km. Patrimônio Natural da UNESCO.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalIguacu">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lençóis -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Maranhão</span>
+            <img src="https://images.unsplash.com/photo-1574394088516-e1a1f713fb11?w=800&h=500&fit=crop&crop=center"
+                 alt="Lençóis Maranhenses"
+                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/4/4e/Lencois_Maranhenses_2018.jpg'">
+          </div>
+          <div class="card-body">
+            <h5>Lençóis Maranhenses</h5>
+            <p>Um vasto deserto de dunas brancas pontilhado por lagoas de água doce cristalina — um fenômeno único no mundo.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalLencois">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fernando de Noronha -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Pernambuco</span>
+            <img src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=800&h=500&fit=crop&crop=center" alt="Fernando de Noronha">
+          </div>
+          <div class="card-body">
+            <h5>Fernando de Noronha</h5>
+            <p>Arquipélago vulcânico Patrimônio Natural da UNESCO com praias frequentemente eleitas as mais bonitas do mundo.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalNoronha">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pantanal -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Mato Grosso</span>
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&h=500&fit=crop&crop=center" alt="Pantanal">
+          </div>
+          <div class="card-body">
+            <h5>Pantanal</h5>
+            <p>A maior planície alagável do mundo, santuário ecológico com onças, araras e capivaras em abundância.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalPantanal">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Amazônia -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Amazônia</span>
+            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=800&h=500&fit=crop&crop=center" alt="Floresta Amazônica">
+          </div>
+          <div class="card-body">
+            <h5>Floresta Amazônica</h5>
+            <p>A maior floresta tropical do planeta abriga mais de 10% de todas as espécies vivas da Terra. Uma experiência transformadora.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalAmazonia">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Salvador -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Bahia</span>
+            <img src="https://images.unsplash.com/photo-1561821453-3a3c0e74e1c7?w=800&h=500&fit=crop&crop=center"
+                 alt="Salvador Bahia"
+                 onerror="this.src='https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800&h=500&fit=crop'">
+          </div>
+          <div class="card-body">
+            <h5>Salvador, Bahia</h5>
+            <p>Primeira capital do Brasil, Salvador é um caldeirão cultural com o maior carnaval de rua do mundo e arquitetura colonial deslumbrante.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalSalvador">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     BOOTSTRAP MODALS — DETALHES DE CADA DESTINO
+     ===================================================== -->
+
+<!-- Modal Cristo Redentor -->
+<div class="modal fade" id="modalCristo" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Cristo Redentor — Rio de Janeiro</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=900&h=380&fit=crop&crop=top"
+             alt="Cristo Redentor" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">Maravilha do Mundo Moderno</h6>
+          <p>O Cristo Redentor foi eleito uma das Sete Maravilhas do Mundo Moderno em 2007, por votação popular com mais de 100 milhões de participantes de todo o planeta. Está posicionado no topo do Morro do Corcovado, no Parque Nacional da Tijuca, o maior parque florestal urbano do mundo.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Dados Técnicos</h6>
+          <p>A estátua tem 30 metros de altura, com pedestal de 8 metros. A envergadura dos braços é de 28 metros. Foi construída em concreto armado e recoberta com pedras-sabão de cor cinza-esverdeada. Pesa aproximadamente 1.145 toneladas. O acesso se dá de trem (Trem do Corcovado) ou van, com uma trilha a pé também disponível.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Como Visitar</h6>
+          <p>O Corcovado fica no bairro do Cosme Velho, zona sul do Rio de Janeiro. A visita pode ser feita diariamente das 8h às 19h. O trem parte da Estação do Cosme Velho e sobe 3,7 km de trilhos em meio à Mata Atlântica. Recomenda-se chegar cedo para evitar filas e aproveitar a melhor visibilidade.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Dica do viajante:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> Vá em dias de semana pela manhã para evitar as maiores filas. O por do sol visto do Corcovado é uma das experiências mais memoráveis do Rio.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Cataratas do Iguaçu -->
+<div class="modal fade" id="modalIguacu" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Cataratas do Iguaçu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://images.unsplash.com/photo-1544982503-9f984c14501a?w=900&h=380&fit=crop&crop=center"
+             alt="Cataratas do Iguaçu" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">A Maior Catedral de Água do Mundo</h6>
+          <p>As Cataratas do Iguaçu formam o maior sistema de quedas d'água do mundo, com 275 quedas distribuídas ao longo de 2,7 km na fronteira entre o Brasil e a Argentina. A queda mais impressionante, a Garganta do Diabo, tem 80 metros de altura e consome até 6,5 milhões de litros de água por segundo em seu pico.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Patrimônio Mundial</h6>
+          <p>Declaradas Patrimônio Natural da Humanidade pela UNESCO em 1986 (lado brasileiro) e 1984 (lado argentino), as cataratas estão inseridas no Parque Nacional do Iguaçu, que protege o maior remanescente de Mata Atlântica Interior da América do Sul, abrigando onças-pintadas, tucanos e centenas de espécies endêmicas.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Atividades e Experiências</h6>
+          <p>O passeio de barco pelo rio Iguaçu, que leva os visitantes até a base das cataratas, é um dos mais emocionantes do Brasil. O Parque oferece trilhas ecológicas, rafting, rappel, tirolesa e o famoso "Macuco Safari". Do lado argentino, é possível caminhar sobre as passarelas sobre as quedas para uma perspectiva completamente diferente.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Dica do viajante:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> Visite ambos os lados (brasileiro e argentino). O lado brasileiro oferece a melhor vista panorâmica; o argentino permite uma experiência mais íntima com as quedas.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Lençóis Maranhenses -->
+<div class="modal fade" id="modalLencois" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Lençóis Maranhenses</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Lencois_Maranhenses_2018.jpg"
+             alt="Lençóis Maranhenses" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">O Deserto que Floresce</h6>
+          <p>Os Lençóis Maranhenses são um fenômeno geográfico único no planeta: apesar de ser um deserto com dunas de até 40 metros de altura, recebe chuvas abundantes entre janeiro e julho, criando centenas de lagoas de água doce cristalina entre as dunas brancas. A paisagem resultante parece saída de outro planeta.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Localização e Acesso</h6>
+          <p>O Parque Nacional dos Lençóis Maranhenses tem 155.000 hectares e fica no noroeste do Maranhão, entre os municípios de Barreirinhas, Santo Amaro e Primeira Cruz. O acesso principal é pela cidade de Barreirinhas, a 8 horas de São Luís. O parque pode ser explorado a pé, de quadriciclo, de jipe ou de barco pelos rios da região.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Melhor Época para Visitar</h6>
+          <p>A melhor época é entre julho e setembro, quando as lagoas estão cheias após as chuvas e as temperaturas são mais amenas. As lagoas mais famosas são a Lagoa Azul, Lagoa Bonita e Lagoa Tropical. Nadar nas lagoas de água doce cercadas de dunas brancas é uma das experiências mais singulares do Brasil.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Curiosidade:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> Apesar de parecer um deserto típico, os Lençóis Maranhenses recebem entre 1.600 e 2.000 mm de chuva por ano — mais do que muitas florestas tropicais.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Fernando de Noronha -->
+<div class="modal fade" id="modalNoronha" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Fernando de Noronha</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=900&h=380&fit=crop&crop=center"
+             alt="Fernando de Noronha" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">O Paraíso Atlântico</h6>
+          <p>Fernando de Noronha é um arquipélago vulcânico formado por 21 ilhas e ilhotas localizado a 354 km do litoral do Recife. Patrimônio Natural da UNESCO desde 2001, o arquipélago tem apenas 26 km² de área e acesso restrito — no máximo 600 turistas por dia — para preservar seu ecossistema único.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Biodiversidade Marinha</h6>
+          <p>As águas ao redor de Noronha têm visibilidade de até 50 metros, tornando-a um dos melhores destinos de mergulho e snorkel do mundo. Abriga a maior concentração de golfinhos do planeta — o Golfo dos Golfinhos recebe diariamente centenas de golfinhos fiandeiros. Tartarugas marinhas desovam nas praias entre dezembro e junho.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Praias Paradisíacas</h6>
+          <p>A Baía do Sancho é consistentemente eleita a melhor praia do Brasil e uma das melhores do mundo. O acesso é feito por uma escada na rocha ou por barco. Outras praias imperdíveis são a Praia do Leão, Praia da Atalaia (acesso limitado por preservação) e a Praia do Porto, o coração da vila.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Importante:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> É cobrada uma Taxa de Preservação Ambiental (TPA) por diária de estadia. Quanto mais dias você ficar, maior o valor por dia, incentivando estadias mais longas para menor impacto ambiental.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Pantanal -->
+<div class="modal fade" id="modalPantanal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Pantanal — Paraíso do Ecoturismo</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=900&h=380&fit=crop&crop=center"
+             alt="Pantanal" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">A Maior Planície Alagável do Planeta</h6>
+          <p>O Pantanal é a maior planície alagável do mundo, com cerca de 150.000 km² distribuídos entre Mato Grosso, Mato Grosso do Sul (Brasil), Bolívia e Paraguai. Declarado Patrimônio Natural da Humanidade pela UNESCO e Reserva da Biosfera, é considerado o maior santuário ecológico das Américas.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Fauna Extraordinária</h6>
+          <p>O Pantanal abriga a maior concentração de onças-pintadas do mundo, com mais de 4.000 indivíduos. Além disso, são encontrados capivaras, jacarés-do-pantanal, tamanduás, antas, lobos-guarás, tuiuiús (a ave símbolo do bioma), araras-azuis e mais de 650 espécies de aves. A fauna é tão abundante que animais selvagens são avistados facilmente nas fazendas-hotel.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Como Visitar</h6>
+          <p>O acesso principal é pela Transpantaneira, uma estrada de terra com mais de 120 pontes de madeira que atravessa 150 km do bioma. As fazendas-hotel oferecem safáris fotográficos, passeios de barco, pesca esportiva e observação de fauna. A seca (maio a setembro) facilita o avistamento de animais concentrados nas margens dos rios.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Melhor época:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> Entre julho e outubro (seca) para observação da fauna. Entre novembro e março (cheias) para ver a paisagem inundada e aves migratórias, mas algumas estradas ficam intransitáveis.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Amazônia -->
+<div class="modal fade" id="modalAmazonia" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Floresta Amazônica</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=900&h=380&fit=crop&crop=center"
+             alt="Amazônia" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">O Pulmão do Mundo</h6>
+          <p>A Floresta Amazônica é a maior floresta tropical do planeta, com 5,5 milhões de km² (60% no Brasil). Produz 20% do oxigênio terrestre e regula o clima global. Abriga mais de 10% de todas as espécies catalogadas da Terra, incluindo mais de 40.000 espécies de plantas, 3.000 espécies de peixes e 1.300 espécies de pássaros.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Manaus — Porta de Entrada</h6>
+          <p>A capital do Amazonas, Manaus, é o principal polo de ecoturismo da Amazônia. O famoso "Encontro das Águas" — onde os rios Negro e Solimões correm lado a lado por 6 km sem se misturar, devido à diferença de temperatura, velocidade e densidade — é um dos fenômenos naturais mais impressionantes do Brasil.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Experiências Únicas</h6>
+          <p>Dormir em lodges suspensos na copa das árvores, navegar pelos igarapés (canais entre a vegetação), pescar piranhas, nadar com botos-cor-de-rosa, conhecer comunidades ribeirinhas indígenas e observar cobras-suçuaranas são apenas algumas das experiências que só a Amazônia pode oferecer.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Curiosidade:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> O Rio Amazonas descarrega no Atlântico 20% de toda a água doce que os rios do planeta lançam nos oceanos. Sua bacia hidrográfica é a maior do mundo.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Salvador -->
+<div class="modal fade" id="modalSalvador" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Salvador — Bahia</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=900&h=380&fit=crop&crop=center"
+             alt="Salvador Bahia" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">A Cidade de Todos os Santos</h6>
+          <p>Fundada em 1549, Salvador foi a primeira capital do Brasil e o principal porto de entrada de escravizados africanos nas Américas. Essa herança moldou uma identidade cultural única e profundamente africana, expressa na música, na dança, na culinária, na religião e na arte. Hoje é a terceira maior cidade do Brasil, com 2,9 milhões de habitantes.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">O Pelourinho</h6>
+          <p>O Pelourinho, centro histórico de Salvador, é Patrimônio Mundial da UNESCO. Seu conjunto arquitetônico colonial do século XVII, com casarões coloridos, igrejas barrocas e ladeiras de paralelepípedo, é um dos mais bem preservados do Brasil. A Igreja de São Francisco, com seu interior inteiramente revestido em ouro, é considerada a mais bela do país.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Carnaval de Salvador</h6>
+          <p>O Carnaval de Salvador é o maior carnaval de rua do mundo, com mais de 2 milhões de foliões por dia. Diferente do Rio, em Salvador o carnaval acontece nas ruas, atrás dos trios elétricos — caminhões com palcos imensos. O axé, o samba-reggae e o pagode baiano embalam seis dias de festa ininterrupta.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Não perca:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> O Elevador Lacerda, que liga a Cidade Alta à Cidade Baixa, é o elevador urbano mais movimentado do Brasil. A vista da Baía de Todos os Santos ao entardecer é de tirar o fôlego.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <span class="footer-brand">Brasil Cultural</span>
+        <p class="footer-desc">Celebrando a riqueza cultural, natural e histórica do maior país da América do Sul.</p>
+      </div>
+      <div class="col-sm-6 col-lg-2 offset-lg-2">
+        <span class="footer-heading">Páginas</span>
+        <ul class="footer-nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="culinaria.html">Culinária</a></li>
+          <li><a href="turismo.html">Turismo</a></li>
+          <li><a href="fauna.html">Fauna</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <span class="footer-heading">Sobre o Projeto</span>
+        <p class="footer-desc">Trabalho desenvolvido para a disciplina de Programação Web III.<br>Professor Ivan Souza.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© 2025 Brasil Cultural — Todos os direitos reservados</div>
+  </div>
+</footer>
+
+<button id="voltarTopo" onclick="voltarTopo()" aria-label="Voltar ao topo">↑</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Culinária Brasileira — Brasil Cultural</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Brasil Cultural</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link active" href="culinaria.html">Culinária</a></li>
+        <li class="nav-item"><a class="nav-link" href="turismo.html">Turismo</a></li>
+        <li class="nav-item"><a class="nav-link" href="fauna.html">Fauna</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&h=700&fit=crop&crop=center"
+       alt="Culinária Brasileira" class="bg-img">
+  <div class="container">
+    <div class="page-header-content">
+      <p class="eyebrow">Gastronomia</p>
+      <h1>Culinária Brasileira</h1>
+      <div class="header-line"></div>
+    </div>
+  </div>
+</header>
+
+<!-- INTRO -->
+<section class="section-sm section-creme">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center reveal">
+        <span class="eyebrow-label">Sabores do Brasil</span>
+        <h2 class="section-title">Uma cozinha que conta histórias</h2>
+        <div class="gold-line center"></div>
+        <p style="color:var(--texto-suave);font-size:1.05rem;line-height:1.85;">
+          A culinária brasileira é resultado de uma rica mistura de influências indígenas, africanas e europeias. Cada região guarda receitas únicas que refletem a diversidade cultural e os ingredientes locais — do dendê baiano ao pinhão gaúcho, da tapioca nordestina ao brigadeiro paulistano.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section class="section section-white">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Feijoada -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Prato Nacional</span>
+            <img src="https://images.unsplash.com/photo-1574484284002-952d92a03a05?w=800&h=500&fit=crop&crop=center"
+                 alt="Feijoada Brasileira"
+                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/6/63/Feijoada.jpg'">
+          </div>
+          <div class="card-body">
+            <h5>Feijoada</h5>
+            <p>Considerado o prato nacional do Brasil, a feijoada é um cozido de feijão-preto com carnes defumadas, servida com arroz, couve e laranja.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalFeijoada">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Moqueca -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Bahia</span>
+            <img src="https://images.unsplash.com/photo-1519984388953-d2406bc725e1?w=800&h=500&fit=crop&crop=center"
+                 alt="Moqueca Baiana"
+                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/4/4e/Moqueca.jpg'">
+          </div>
+          <div class="card-body">
+            <h5>Moqueca Baiana</h5>
+            <p>Preparada com peixe fresco, leite de coco e azeite de dendê, a moqueca baiana é cozida lentamente em panela de barro tradicional.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalMoqueca">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pão de Queijo -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Minas Gerais</span>
+            <img src="https://images.unsplash.com/photo-1586816001966-79b736744398?w=800&h=500&fit=crop&crop=center"
+                 alt="Pão de Queijo"
+                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/7/79/P%C3%A3o_de_queijo.jpg'">
+          </div>
+          <div class="card-body">
+            <h5>Pão de Queijo</h5>
+            <p>Especialidade mineira feita com polvilho e queijo meia-cura, crocante por fora e macio por dentro. Um dos lanches mais amados do Brasil.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalPaoQueijo">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brigadeiro -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Sobremesa</span>
+            <img src="https://images.unsplash.com/photo-1548940740-204726a19be3?w=800&h=500&fit=crop&crop=center"
+                 alt="Brigadeiro"
+                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/a/a3/Brigadeiros.jpg'">
+          </div>
+          <div class="card-body">
+            <h5>Brigadeiro</h5>
+            <p>O docinho mais querido do Brasil, feito com leite condensado, manteiga e achocolatado, coberto com granulado. Presença obrigatória em festas.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalBrigadeiro">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Churrasco -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Rio Grande do Sul</span>
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=800&h=500&fit=crop&crop=center"
+                 alt="Churrasco Gaúcho">
+          </div>
+          <div class="card-body">
+            <h5>Churrasco Gaúcho</h5>
+            <p>Tradição do Sul do Brasil, o churrasco gaúcho é preparado com cortes nobres grelhados ao brasa. O tempero simples de sal grosso realça o sabor natural da carne.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalChurrasco">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Açaí -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Amazônia</span>
+            <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?w=800&h=500&fit=crop&crop=center"
+                 alt="Açaí na Tigela">
+          </div>
+          <div class="card-body">
+            <h5>Açaí na Tigela</h5>
+            <p>Fruto nativo da Amazônia servido gelado com granola, banana e mel. Rico em antioxidantes, é um dos superalimentos mais apreciados no Brasil e no exterior.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalAcai">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="quote-section reveal">
+  <div class="container">
+    <span class="quote-mark">"</span>
+    <blockquote>A cozinha brasileira é uma sinfonia de sabores — cada ingrediente conta um pedaço da nossa história.</blockquote>
+    <cite>— Gastronomia Brasileira</cite>
+  </div>
+</div>
+
+<!-- =====================================================
+     BOOTSTRAP MODALS — DETALHES DE CADA PRATO
+     ===================================================== -->
+
+<!-- Modal Feijoada -->
+<div class="modal fade" id="modalFeijoada" tabindex="-1" aria-labelledby="modalFeijoada" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Feijoada — O Prato Nacional</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://images.unsplash.com/photo-1574484284002-952d92a03a05?w=900&h=380&fit=crop&crop=center"
+             alt="Feijoada"
+             onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/6/63/Feijoada.jpg'"
+             style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">Origem &amp; História</h6>
+          <p>A feijoada é considerada o prato nacional do Brasil, embora sua origem seja objeto de debate histórico. Uma das teorias mais aceitas é que o prato surgiu durante o período colonial, quando escravizados africanos cozinhavam as partes menos nobres do porco — orelha, rabo e pé — com feijão-preto, criando uma refeição nutritiva e saborosa.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Ingredientes Tradicionais</h6>
+          <p>A receita clássica leva feijão-preto, carne-seca, paio, linguiça defumada, costelinha de porco, lombo e as carnes salgadas. O cozimento é lento, por várias horas, até que o feijão atinja uma consistência cremosa e os sabores estejam completamente integrados.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Como é Servida</h6>
+          <p>Servida tradicionalmente às sextas-feiras e aos sábados, a feijoada é acompanhada de arroz branco, couve mineira refogada com alho, farofa, laranja fatiada e torresmo. Uma boa caipirinha completa a refeição. O prato é sinônimo de reunião familiar e celebração.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Curiosidade:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> A feijoada é presença garantida nos restaurantes brasileiros ao redor do mundo e é um dos pratos mais pedidos por turistas que visitam o Brasil.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Moqueca -->
+<div class="modal fade" id="modalMoqueca" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Moqueca Baiana</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://images.unsplash.com/photo-1519984388953-d2406bc725e1?w=900&h=380&fit=crop&crop=center"
+             alt="Moqueca"
+             onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/4/4e/Moqueca.jpg'"
+             style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">Origem Indígena e Africana</h6>
+          <p>A moqueca é um dos pratos mais antigos da culinária brasileira. Sua origem remonta às preparações indígenas de peixe cozido, que foram enriquecidas pela influência africana com a adição do azeite de dendê e do leite de coco, ingredientes trazidos pelos escravizados ao Brasil.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Moqueca Baiana vs. Capixaba</h6>
+          <p>Existem duas versões famosas: a baiana, que usa azeite de dendê e leite de coco, conferindo uma cor alaranjada e sabor mais intenso; e a capixaba (do Espírito Santo), que dispensa esses ingredientes e utiliza urucum para colorir e azeite comum, resultando em sabor mais suave.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">A Panela de Barro</h6>
+          <p>A moqueca é tipicamente preparada em panela de barro, que distribui o calor uniformemente e conserva os sabores dos ingredientes. A panela deve ser aquecida antes de receber o peixe fresco, o tomate, a cebola, o pimentão e o coentro.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Dica:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> A moqueca é ainda mais saborosa com pirão — um caldo feito com a mesma base da moqueca engrossada com farinha de mandioca.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Pão de Queijo -->
+<div class="modal fade" id="modalPaoQueijo" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Pão de Queijo Mineiro</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://images.unsplash.com/photo-1586816001966-79b736744398?w=900&h=380&fit=crop&crop=center"
+             alt="Pão de Queijo"
+             onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/7/79/P%C3%A3o_de_queijo.jpg'"
+             style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">História Mineira</h6>
+          <p>O pão de queijo nasceu em Minas Gerais no século XVIII, quando os escravizados faziam bolinhos com o polvilho — resíduo da produção da farinha de mandioca — misturado com queijo curado. Sem trigo disponível nas fazendas do interior, criaram uma iguaria que conquistou o mundo.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">O Segredo do Polvilho</h6>
+          <p>O ingrediente fundamental é o polvilho — azedo ou doce — que dá ao pão de queijo sua textura única: uma casca levemente crocante por fora e um interior elástico, macio e quase borrachudo. O queijo meia-cura de Minas completa o sabor inconfundível.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Sucesso Global</h6>
+          <p>Hoje o pão de queijo é exportado em forma congelada para mais de 40 países. Grandes redes de café no exterior já oferecem a iguaria em seus cardápios, e ele conquistou a certificação de Indicação Geográfica Protegida pelo governo brasileiro.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Curiosidade:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> O pão de queijo é naturalmente livre de glúten, tornando-se uma opção popular entre pessoas com intolerância ao trigo ao redor do mundo.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Brigadeiro -->
+<div class="modal fade" id="modalBrigadeiro" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Brigadeiro — Ícone da Doçaria</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://images.unsplash.com/photo-1548940740-204726a19be3?w=900&h=380&fit=crop&crop=center"
+             alt="Brigadeiro" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">Origem Política</h6>
+          <p>O brigadeiro foi criado na década de 1940 durante a campanha presidencial do Brigadeiro Eduardo Gomes. Suas apoiadoras preparavam o docinho para arrecadar fundos, e o nome homenageia o candidato. Feito com ingredientes simples em tempos de racionamento pós-guerra, se tornou um símbolo nacional.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Receita Clássica</h6>
+          <p>A receita original leva apenas três ingredientes: uma lata de leite condensado, uma colher de manteiga e quatro colheres de achocolatado em pó. Cozinha-se em fogo baixo até desgrudar da panela. Depois de esfriar, é enrolado com as mãos untadas de manteiga e coberto com granulado de chocolate.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Variações Modernas</h6>
+          <p>Hoje existem centenas de variações: brigadeiro de maracujá, pistache, limão, café, churros, red velvet e até versões gourmet com trufa e ganache. As "brigadeirias" — lojas especializadas — se tornaram um fenômeno gastronômico no Brasil e no exterior.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Sabia que?</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> O Brasil consome cerca de 1 bilhão de brigadeiros por ano. A data comemorativa do brigadeiro é 29 de abril.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Churrasco -->
+<div class="modal fade" id="modalChurrasco" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Churrasco Gaúcho</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=900&h=380&fit=crop&crop=center"
+             alt="Churrasco" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">Tradição Gaúcha</h6>
+          <p>O churrasco gaúcho tem raízes nos campos do Rio Grande do Sul, onde os peões (trabalhadores de fazenda) cozinhavam grandes pedaços de carne diretamente no fogo a campo aberto. Com o tempo, essa prática virou uma das mais importantes tradições culturais do estado e se espalhou por todo o Brasil.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Os Cortes Nobres</h6>
+          <p>Os cortes mais valorizados no churrasco gaúcho são a picanha (o preferido nacional), o ancho, o assado de tira, a costela e o cupim. O segredo está na qualidade da carne, temperada apenas com sal grosso para não mascarar o sabor natural, e na brasa controlada com madeira nativa.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Churrasco como Evento Social</h6>
+          <p>No Brasil, o churrasco é muito mais do que uma refeição — é um evento social. Reuniões de família, encontros entre amigos e comemorações têm no "churras" sua expressão máxima. O "churrasqueiro" — quem fica responsável pela carne — exerce um papel de honra no grupo.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Curiosidade:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> O Brasil é um dos maiores produtores e exportadores de carne bovina do mundo, e o churrasco brasileiro é reconhecido internacionalmente pela qualidade e técnica.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Açaí -->
+<div class="modal fade" id="modalAcai" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Açaí — O Ouro Roxo da Amazônia</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?w=900&h=380&fit=crop&crop=center"
+             alt="Açaí" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">O Fruto Sagrado da Amazônia</h6>
+          <p>O açaí (Euterpe oleracea) é uma palmeira nativa da região amazônica, cultivada principalmente nos estados do Pará e Amazonas. Para as populações ribeirinhas, o açaí sempre foi um alimento fundamental, consumido diariamente como base energética da dieta. No Pará, é tradição tomar açaí com farinha de tapioca nas refeições principais.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Propriedades Nutricionais</h6>
+          <p>O açaí é reconhecido como um superalimento por sua alta concentração de antocianinas (antioxidantes), fibras, ácidos graxos essenciais (ômega 3, 6 e 9), vitaminas do complexo B, além de minerais como cálcio, ferro e potássio. Estudos científicos relacionam seu consumo à saúde cardiovascular e ao combate ao envelhecimento celular.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Fenômeno Global</h6>
+          <p>A partir dos anos 2000, o açaí saiu da Amazônia para conquistar o mundo. Hoje é exportado para mais de 40 países, principalmente os EUA, Japão e Europa. As "açaiterias" — lojas especializadas — proliferaram nas grandes cidades brasileiras, e o produto faz sucesso em academias e entre os adeptos de alimentação saudável.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Sabia que?</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> O Pará produz mais de 95% do açaí consumido no mundo. A colheita do fruto é feita manualmente pelos "peconheiros", que escalam as palmeiras usando apenas uma tira de folha.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <span class="footer-brand">Brasil Cultural</span>
+        <p class="footer-desc">Celebrando a riqueza cultural, natural e histórica do maior país da América do Sul.</p>
+      </div>
+      <div class="col-sm-6 col-lg-2 offset-lg-2">
+        <span class="footer-heading">Páginas</span>
+        <ul class="footer-nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="culinaria.html">Culinária</a></li>
+          <li><a href="turismo.html">Turismo</a></li>
+          <li><a href="fauna.html">Fauna</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <span class="footer-heading">Sobre o Projeto</span>
+        <p class="footer-desc">Trabalho desenvolvido para a disciplina de Programação Web III.<br>Professor Ivan Souza.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© 2025 Brasil Cultural — Todos os direitos reservados</div>
+  </div>
+</footer>
+
+<button id="voltarTopo" onclick="voltarTopo()" aria-label="Voltar ao topo">↑</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

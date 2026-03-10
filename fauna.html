@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fauna Brasileira — Brasil Cultural</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Brasil Cultural</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="culinaria.html">Culinária</a></li>
+        <li class="nav-item"><a class="nav-link" href="turismo.html">Turismo</a></li>
+        <li class="nav-item"><a class="nav-link active" href="fauna.html">Fauna</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=1600&h=700&fit=crop&crop=center"
+       alt="Onça-Pintada" class="bg-img">
+  <div class="container">
+    <div class="page-header-content">
+      <p class="eyebrow">Natureza</p>
+      <h1>Fauna Brasileira</h1>
+      <div class="header-line"></div>
+    </div>
+  </div>
+</header>
+
+<!-- INTRO -->
+<section class="section-sm section-creme">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center reveal">
+        <span class="eyebrow-label">Biodiversidade</span>
+        <h2 class="section-title">O Brasil e seus animais únicos</h2>
+        <div class="gold-line center"></div>
+        <p style="color:var(--texto-suave);font-size:1.05rem;line-height:1.85;">
+          O Brasil é o país com a maior biodiversidade do mundo, abrigando cerca de <strong>12% de todas as espécies do planeta</strong>. Da Amazônia ao Cerrado, do Pantanal à Mata Atlântica, cada bioma guarda criaturas únicas e fascinantes, muitas das quais ainda são estudadas pela ciência.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-6 col-md-3 reveal"><div class="stat-item"><span class="stat-number">3.500+</span><span class="stat-label">espécies de peixes</span></div></div>
+      <div class="col-6 col-md-3 reveal"><div class="stat-item"><span class="stat-number">1.800+</span><span class="stat-label">espécies de pássaros</span></div></div>
+      <div class="col-6 col-md-3 reveal"><div class="stat-item"><span class="stat-number">600+</span><span class="stat-label">espécies de mamíferos</span></div></div>
+      <div class="col-6 col-md-3 reveal"><div class="stat-item"><span class="stat-number">12%</span><span class="stat-label">das espécies do planeta</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CARDS -->
+<section class="section section-white">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow-label">Animais Emblemáticos</span>
+      <h2 class="section-title">Espécies que impressionam</h2>
+      <div class="gold-line center"></div>
+    </div>
+    <div class="row g-4">
+
+      <!-- Onça-Pintada -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Amazônia · Pantanal</span>
+            <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=800&h=500&fit=crop&crop=center" alt="Onça-Pintada">
+          </div>
+          <div class="card-body">
+            <h5>Onça-Pintada</h5>
+            <p>O maior felino das Américas habita a Amazônia e o Pantanal. Predadora de topo com uma das mordidas mais poderosas entre todos os felinos.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalOnca">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lobo-Guará -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Cerrado</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Maned_wolf.jpg" alt="Lobo-Guará">
+          </div>
+          <div class="card-body">
+            <h5>Lobo-Guará</h5>
+            <p>O maior canídeo da América do Sul vive no Cerrado, com pernas longas e pelagem avermelhada. Apesar da aparência, é um animal onívoro e tímido.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalLobo">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mico-Leão-Dourado -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Mata Atlântica</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Leontopithecus_rosalia.jpg" alt="Mico-Leão-Dourado">
+          </div>
+          <div class="card-body">
+            <h5>Mico-Leão-Dourado</h5>
+            <p>Endêmico da Mata Atlântica, com pelagem alaranjada deslumbrante. Símbolo mundial de conservação, foi salvo da extinção por programas pioneiros.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalMico">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tamanduá-Bandeira -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Cerrado · Pantanal</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Giant_anteater.jpg" alt="Tamanduá-Bandeira">
+          </div>
+          <div class="card-body">
+            <h5>Tamanduá-Bandeira</h5>
+            <p>Com focinho tubular e língua que alcança 60 cm, consome até 35 mil formigas por dia. Um dos mamíferos mais singulares do Brasil, classificado como vulnerável.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalTamandua">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arara-Azul -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Pantanal · Amazônia</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Hyacinth_Macaw.jpg" alt="Arara-Azul">
+          </div>
+          <div class="card-body">
+            <h5>Arara-Azul-Grande</h5>
+            <p>A maior arara do mundo, com plumagem azul cobalto vibrante. Símbolo do Pantanal, vive em pares para a vida toda e foi salva da extinção por esforços de conservação.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalArara">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Boto-cor-de-rosa -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-premium">
+          <div class="card-img-wrap">
+            <span class="card-tag">Amazônia</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Amazon_river_dolphin.jpg" alt="Boto-cor-de-rosa">
+          </div>
+          <div class="card-body">
+            <h5>Boto-cor-de-rosa</h5>
+            <p>O maior golfinho de água doce do mundo habita os rios amazônicos. Sua coloração rosada e as lendas indígenas que o cercam tornam-no um dos animais mais fascinantes do Brasil.</p>
+            <button class="card-read-more" data-bs-toggle="modal" data-bs-target="#modalBoto">Saiba mais</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="quote-section reveal">
+  <div class="container">
+    <span class="quote-mark">"</span>
+    <blockquote>O Brasil abriga a maior diversidade biológica do planeta. Proteger essa fauna é proteger o futuro de toda a humanidade.</blockquote>
+    <cite>— WWF Brasil</cite>
+  </div>
+</div>
+
+<!-- =====================================================
+     BOOTSTRAP MODALS — DETALHES DE CADA ANIMAL
+     ===================================================== -->
+
+<!-- Modal Onça-Pintada -->
+<div class="modal fade" id="modalOnca" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Onça-Pintada — Panthera onca</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=900&h=380&fit=crop&crop=center"
+             alt="Onça-Pintada" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">O Maior Felino das Américas</h6>
+          <p>A onça-pintada (Panthera onca) é o maior felino das Américas e o terceiro maior do mundo, superada apenas pelo leão e pelo tigre. Os machos adultos pesam entre 56 e 96 kg e podem ultrapassar 2 metros de comprimento. Seu padrão de manchas — rosetas com pontos centrais — é único para cada indivíduo, como uma impressão digital.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Habitat e Distribuição</h6>
+          <p>Originalmente distribuída por toda a América, do sudoeste dos EUA até a Patagônia, a onça-pintada perdeu mais de 50% de sua área de ocorrência. No Brasil, as maiores populações vivem na Amazônia e no Pantanal. O Pantanal é atualmente o local do mundo com maior densidade de onças-pintadas, tornando-se destino de safáris específicos para avistamento do animal.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Comportamento de Caça</h6>
+          <p>Ao contrário de outros felinos que sufocam suas presas, a onça-pintada mata com uma mordida na cabeça, perfurando o crânio com seus caninos. É uma excelente nadadora, caçando capivaras, jacarés, peixes e tartarugas na água. Pode escalar árvores com facilidade e é ativa tanto de dia quanto à noite.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Conservação</h6>
+          <p>Classificada como "Quase Ameaçada" pela IUCN, a onça-pintada enfrenta ameaças como perda de habitat, conflito com pecuaristas e tráfico de animais. O Programa Onçafari, no Pantanal, realizou um trabalho pioneiro de habituação de onças ao contato humano, permitindo safáris fotográficos a 5 metros do animal.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Ficha técnica:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> Peso: 56-96 kg | Comprimento: 1,1-1,9 m | Velocidade: 80 km/h | Vida útil: 12-15 anos na natureza</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Lobo-Guará -->
+<div class="modal fade" id="modalLobo" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Lobo-Guará — Chrysocyon brachyurus</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Maned_wolf.jpg"
+             alt="Lobo-Guará" style="width:100%;height:300px;object-fit:cover;display:block;object-position:center;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">O Lobo das Longas Pernas</h6>
+          <p>O lobo-guará (Chrysocyon brachyurus) é o maior canídeo da América do Sul e o único representante do gênero Chrysocyon. Apesar do nome, não é um lobo verdadeiro — pertence a uma linhagem evolutiva própria e está mais relacionado às raposas sul-americanas. Seus membros longos (podem atingir 90 cm de altura) são uma adaptação para ver acima da vegetação densa do Cerrado.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Dieta Surpreendente</h6>
+          <p>Ao contrário do que se esperaria de um canídeo de grande porte, o lobo-guará tem dieta onívora com forte componente vegetal. Cerca de 50% de sua dieta é composta por frutas — especialmente a lobeira (Solanum lycocarpum), também chamada de "fruta-do-lobo". O animal é importante dispersor de sementes no Cerrado, contribuindo para a regeneração do bioma.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Comportamento e Territorialidade</h6>
+          <p>O lobo-guará é um animal solitário e monogâmico. Casais compartilham territórios de 25-30 km², mas raramente se encontram fora do período reprodutivo. São animais noturnos e crepusculares, com odor característico (semelhante ao skunk americano) usado para marcar território. Sua vocalização, um latido rouco, é característica do Cerrado noturno.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Status de conservação:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> Vulnerável à extinção no Brasil. A destruição do Cerrado — que perdeu 50% de sua área original — é a principal ameaça. Estima-se uma população de 13.000 a 17.000 indivíduos.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Mico-Leão -->
+<div class="modal fade" id="modalMico" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Mico-Leão-Dourado — Leontopithecus rosalia</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Leontopithecus_rosalia.jpg"
+             alt="Mico-Leão-Dourado" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">Joia da Mata Atlântica</h6>
+          <p>O mico-leão-dourado (Leontopithecus rosalia) é um pequeno primata endêmico da Mata Atlântica do estado do Rio de Janeiro, com pelagem alaranjada-dourada absolutamente singular. Adultos pesam apenas 400-800 gramas e medem cerca de 40 cm de corpo, com a cauda medindo mais do que o corpo. Sua "juba" de pelos ao redor da face lembra um leão em miniatura.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">De Quase Extinto a Símbolo de Conservação</h6>
+          <p>Nos anos 1970, restavam menos de 200 indivíduos na natureza. Um programa internacional pioneiro de conservação, reintrodução de animais criados em cativeiro e reflorestamento — coordenado pelo INPA, WWF e zoológicos de todo o mundo — conseguiu elevar a população para mais de 3.700 indivíduos hoje. O caso é citado como um dos maiores sucessos da conservação global.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Vida Social</h6>
+          <p>Vivem em grupos familiares de 2 a 8 indivíduos, liderados por um casal reprodutor. Os filhotes, geralmente gêmeos, são carregados pelos machos e demais membros do grupo na maior parte do tempo. Alimentam-se de frutas, néctar, insetos, pequenos répteis e anfíbios. Suas vocalizações complexas incluem chamados de alarme, cantos territoriais e vocalizações de contato.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Onde ver:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> A Reserva Biológica de Poço das Antas e a Reserva Particular do Patrimônio Natural União, em Silva Jardim (RJ), são os melhores locais para observar micos-leões na natureza.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Tamanduá -->
+<div class="modal fade" id="modalTamandua" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Tamanduá-Bandeira — Myrmecophaga tridactyla</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Giant_anteater.jpg"
+             alt="Tamanduá-Bandeira" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">O Maior Tamanduá do Mundo</h6>
+          <p>O tamanduá-bandeira (Myrmecophaga tridactyla) é o maior representante da ordem Pilosa, com corpo que pode chegar a 1,2 metros e cauda de igual comprimento. Um adulto pesa entre 22 e 39 kg. Seu focinho tubular alongado, que pode medir 45 cm, não tem dentes — a alimentação é feita exclusivamente com a língua longa e pegajosa.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">O Mestre das Formigas</h6>
+          <p>A língua do tamanduá-bandeira mede até 60 cm e pode se mover 150 vezes por minuto dentro dos formigueiros, capturando até 35.000 formigas e cupins por dia. O animal possui garras frontais extraordinariamente poderosas, capazes de abrir formigueiros de concreto. Curiosamente, passa apenas 1 minuto em cada formigueiro para evitar as picadas das formigas.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Defesa Surpreendente</h6>
+          <p>Apesar de parecer inofensivo, o tamanduá-bandeira pode ser extremamente perigoso quando ameaçado. Fica ereto nos membros traseiros e usa suas garras frontais, capazes de matar um puma ou uma onça-pintada. Há registros de seres humanos mortos por tamanduás que se sentiram acuados. O filhote é carregado nas costas da mãe por até um ano.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Status de conservação:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> Vulnerável à extinção. As principais ameaças são os atropelamentos em rodovias (o maior vetor de morte), queimadas e caça ilegal. É o animal mais atropelado no Pantanal.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Arara-Azul -->
+<div class="modal fade" id="modalArara" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Arara-Azul-Grande — Anodorhynchus hyacinthinus</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Hyacinth_Macaw.jpg"
+             alt="Arara-Azul" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">A Maior Arara do Mundo</h6>
+          <p>A arara-azul-grande (Anodorhynchus hyacinthinus) é a maior arara e o maior papagaio voador do mundo, com envergadura que chega a 1,2 metros e comprimento de 1 metro. A plumagem é de um azul cobalto profundo e vibrante, com manchas amarelas ao redor dos olhos e na base do bico. Um exemplar adulto pesa entre 1,2 e 1,7 kg.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">O Bico mais Poderoso das Aves</h6>
+          <p>O bico da arara-azul é considerado o mais poderoso entre todas as aves do mundo. Com ele, a arara abre nozes-do-palmito de espécies do gênero Attalea — como o acuri e o bocaiuva — que são tão duras que nem um martelo quebraria facilmente. A arara insere o fruto na chanfradura da mandíbula inferior e aplica pressão com a mandíbula superior, rachadndo a casca com precisão cirúrgica.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Conservação e Recuperação</h6>
+          <p>Em 1990, a população havia caído a menos de 3.000 indivíduos devido ao tráfico de animais — a arara-azul chegou a ser vendida por mais de US$ 10.000 cada. O trabalho do biólogo Hyron Rodrigues do Prata e do Instituto Arara Azul, com proteção de ninhos e conscientização comunitária, elevou a população para mais de 6.500 animais atualmente. É um dos maiores sucessos de conservação do Brasil.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Ficha técnica:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> Comprimento: até 100 cm | Peso: 1,2-1,7 kg | Envergadura: até 120 cm | Longevidade: até 60 anos em cativeiro | Monogâmica para a vida</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Boto -->
+<div class="modal fade" id="modalBoto" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="border:none;border-radius:0;">
+      <div class="modal-header" style="background:var(--verde);border:none;padding:1.5rem 2rem;">
+        <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:#fff;font-size:1.5rem;">Boto-cor-de-rosa — Inia geoffrensis</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Amazon_river_dolphin.jpg"
+             alt="Boto-cor-de-rosa" style="width:100%;height:300px;object-fit:cover;display:block;">
+        <div style="padding:2rem 2.5rem;">
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;">O Maior Golfinho de Água Doce</h6>
+          <p>O boto-cor-de-rosa (Inia geoffrensis), também chamado de boto-vermelho ou "delfín rosado", é o maior cetáceo de água doce do mundo. Os machos adultos podem atingir 2,5 metros de comprimento e pesar até 185 kg. A coloração rosada, que deu origem ao nome popular, se intensifica com a excitação e o envelhecimento — filhotes são cinzas e ficam mais rosados com os anos.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">Anatomia Adaptada aos Rios</h6>
+          <p>Diferente dos golfinhos marinhos, o boto possui características únicas adaptadas à vida nos rios amazônicos: o pescoço é flexível, permitindo virar a cabeça 90°; os olhos são pequenos mas funcionais; a nadadeira dorsal é baixa (para navegar em águas rasas); e o rostro (focinho) é longo e curvo, ideal para farejar o fundo lodoso em busca de peixes. Possui dentes diferenciados — cônico na frente e molar na parte de trás.</p>
+          <h6 style="color:var(--ouro);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;margin-top:1.5rem;">O Boto nas Lendas Amazônicas</h6>
+          <p>O boto é uma das figuras mais importantes do folclore amazônico. A lenda mais conhecida diz que, nas noites de festa, o boto se transforma em um belo rapaz de chapéu (para esconder o orifício respiratório) e seduz mulheres às margens dos rios. A lenda serviu historicamente para explicar gravidez de mulheres solteiras em comunidades ribeirinhas. Por isso, o boto sempre foi protegido e é considerado sagrado por muitas comunidades.</p>
+          <div style="background:var(--creme);padding:1rem 1.5rem;border-left:3px solid var(--ouro);margin-top:1.5rem;">
+            <strong style="font-size:.8rem;color:var(--verde);">Status de conservação:</strong>
+            <span style="font-size:.9rem;color:var(--texto-suave);"> Em perigo (EN) na Lista Vermelha da IUCN. As principais ameaças são a pesca acidental, caça (usados como isca para peixe-liso), poluição dos rios e hidroelétricas que fragmentam as populações.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <span class="footer-brand">Brasil Cultural</span>
+        <p class="footer-desc">Celebrando a riqueza cultural, natural e histórica do maior país da América do Sul.</p>
+      </div>
+      <div class="col-sm-6 col-lg-2 offset-lg-2">
+        <span class="footer-heading">Páginas</span>
+        <ul class="footer-nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="culinaria.html">Culinária</a></li>
+          <li><a href="turismo.html">Turismo</a></li>
+          <li><a href="fauna.html">Fauna</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <span class="footer-heading">Sobre o Projeto</span>
+        <p class="footer-desc">Trabalho desenvolvido para a disciplina de Programação Web III.<br>Professor Ivan Souza.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© 2025 Brasil Cultural — Todos os direitos reservados</div>
+  </div>
+</footer>
+
+<button id="voltarTopo" onclick="voltarTopo()" aria-label="Voltar ao topo">↑</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

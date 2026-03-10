@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brasil Cultural — Descubra o Brasil</title>
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<!-- NAVBAR (Bootstrap navbar-expand-lg) -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Brasil Cultural</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="culinaria.html">Culinária</a></li>
+        <li class="nav-item"><a class="nav-link" href="turismo.html">Turismo</a></li>
+        <li class="nav-item"><a class="nav-link" href="fauna.html">Fauna</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO: Bootstrap Carousel -->
+<section class="hero-carousel">
+  <div id="carouselBrasil" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5500" style="height:100%;">
+    <div class="carousel-inner" style="height:100%;">
+      <div class="carousel-item active" style="height:100%;">
+        <img src="img/Rio_de_Janeiro_Cristo_Redentor.jpg"
+             alt="Cristo Redentor" style="width:100%;height:100%;object-fit:cover;filter:brightness(.52);">
+      </div>
+      <div class="carousel-item" style="height:100%;">
+        <img src="https://images.unsplash.com/photo-1544982503-9f984c14501a?w=1600&h=900&fit=crop&crop=center"
+             alt="Cataratas do Iguaçu" style="width:100%;height:100%;object-fit:cover;filter:brightness(.52);">
+      </div>
+      <div class="carousel-item" style="height:100%;">
+        <img src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=1600&h=900&fit=crop&crop=center"
+             alt="Praia brasileira" style="width:100%;height:100%;object-fit:cover;filter:brightness(.52);">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBrasil" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselBrasil" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <div class="hero-overlay">
+    <p class="eyebrow">Bem-vindo ao</p>
+    <h1>Brasil</h1>
+    <p class="hero-sub">O país da natureza exuberante, cultura vibrante e povo acolhedor</p>
+    <div class="hero-btns">
+      <a href="#historia" class="btn-ouro">Explorar</a>
+      <a href="turismo.html" class="btn-outline-white">Ver Destinos</a>
+    </div>
+  </div>
+  <div class="scroll-cue"><small>Rolar</small><span>↓</span></div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-6 col-md-3 reveal"><div class="stat-item"><span class="stat-number">8,5M</span><span class="stat-label">km² de território</span></div></div>
+      <div class="col-6 col-md-3 reveal"><div class="stat-item"><span class="stat-number">214M</span><span class="stat-label">habitantes</span></div></div>
+      <div class="col-6 col-md-3 reveal"><div class="stat-item"><span class="stat-number">60%</span><span class="stat-label">da Amazônia mundial</span></div></div>
+      <div class="col-6 col-md-3 reveal"><div class="stat-item"><span class="stat-number">7,5K</span><span class="stat-label">km de litoral</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- HISTÓRIA -->
+<section class="section section-creme" id="historia">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 order-lg-2 reveal">
+        <div class="history-img-wrap">
+          <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=900&h=600&fit=crop&crop=center"
+               alt="Floresta Amazônica">
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1 reveal">
+        <div class="history-text">
+          <span class="eyebrow-label">Nossa história</span>
+          <h2 class="section-title">Origem e Formação do Brasil</h2>
+          <div class="gold-line"></div>
+          <p>O Brasil é o maior país da América do Sul e um dos territórios com maior diversidade cultural e natural do planeta. Antes da chegada dos europeus, o território já era habitado por milhões de indígenas pertencentes a centenas de etnias, cada uma com seus costumes, idiomas e tradições únicas.</p>
+          <p>Em 1500, o navegador Pedro Álvares Cabral chegou a estas terras, iniciando o longo período colonial marcado pelos ciclos do açúcar, do ouro e do café — que moldaram profundamente a formação social, econômica e cultural do país.</p>
+          <p>Em 1822, Dom Pedro I proclamou a independência às margens do Rio Ipiranga. Hoje o Brasil é reconhecido mundialmente por sua biodiversidade única, culinária rica, música vibrante e paisagens de tirar o fôlego.</p>
+          <a href="turismo.html" class="btn-verde mt-2">Explorar Destinos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTAQUES -->
+<section class="section section-white">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow-label">O que descobrir</span>
+      <h2 class="section-title">Explore o Brasil</h2>
+      <div class="gold-line center"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal">
+        <a href="turismo.html" class="featured-card">
+          <img src="https://images.unsplash.com/photo-1544982503-9f984c14501a?w=900&h=600&fit=crop&crop=center" alt="Turismo">
+          <div class="featured-card-body">
+            <span class="eyebrow-label">Destinos</span>
+            <h3>Turismo</h3>
+            <p>Das cataratas à orla de Fernando de Noronha</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 reveal">
+        <a href="culinaria.html" class="featured-card">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&h=600&fit=crop&crop=center" alt="Culinária">
+          <div class="featured-card-body">
+            <span class="eyebrow-label">Gastronomia</span>
+            <h3>Culinária</h3>
+            <p>Sabores que contam a história de um povo</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 reveal">
+        <a href="fauna.html" class="featured-card">
+          <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=900&h=600&fit=crop&crop=center" alt="Fauna">
+          <div class="featured-card-body">
+            <span class="eyebrow-label">Natureza</span>
+            <h3>Fauna</h3>
+            <p>Os animais mais fascinantes do planeta</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TABELA: Bootstrap table-striped table-bordered -->
+<section class="section section-creme" id="informacoes">
+  <div class="container">
+    <div class="row align-items-start g-5">
+      <div class="col-lg-5 reveal">
+        <span class="eyebrow-label">Dados oficiais</span>
+        <h2 class="section-title">Informações Gerais</h2>
+        <div class="gold-line"></div>
+        <p style="color:var(--texto-suave);font-size:.97rem;line-height:1.8;">
+          Do cerrado às praias tropicais, o Brasil reúne em um único território uma riqueza cultural, geográfica e humana sem precedentes no mundo. Conheça os números que fazem deste país um dos mais fascinantes do planeta.
+        </p>
+      </div>
+      <div class="col-lg-7 reveal">
+        <div class="table-wrap">
+          <table class="table table-premium mb-0">
+            <thead><tr><th>Aspecto</th><th>Informação</th></tr></thead>
+            <tbody>
+              <tr><td><span class="td-icon">🏛️</span><span class="td-strong">Capital</span></td><td>Brasília</td></tr>
+              <tr><td><span class="td-icon">👥</span><span class="td-strong">População</span></td><td>≈ 214 milhões de habitantes</td></tr>
+              <tr><td><span class="td-icon">🗣️</span><span class="td-strong">Idioma Oficial</span></td><td>Português</td></tr>
+              <tr><td><span class="td-icon">💰</span><span class="td-strong">Moeda</span></td><td>Real (R$)</td></tr>
+              <tr><td><span class="td-icon">🌎</span><span class="td-strong">Continente</span></td><td>América do Sul</td></tr>
+              <tr><td><span class="td-icon">📐</span><span class="td-strong">Área Territorial</span></td><td>8,5 milhões de km²</td></tr>
+              <tr><td><span class="td-icon">🌡️</span><span class="td-strong">Clima</span></td><td>Predominantemente Tropical</td></tr>
+              <tr><td><span class="td-icon">🏛️</span><span class="td-strong">Governo</span></td><td>República Federativa Presidencialista</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="quote-section reveal">
+  <div class="container">
+    <span class="quote-mark">"</span>
+    <blockquote>O Brasil não é um país para principiantes — é uma aventura que exige todos os seus sentidos.</blockquote>
+    <cite>— Tom Jobim</cite>
+  </div>
+</div>
+
+<!-- GALERIA -->
+<section class="section section-white">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="eyebrow-label">Paisagens</span>
+      <h2 class="section-title">Belezas Naturais do Brasil</h2>
+      <div class="gold-line center"></div>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-4 reveal">
+        <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=800&h=560&fit=crop&crop=center"
+             alt="Floresta Tropical" class="img-fluid w-100" style="height:280px;object-fit:cover;display:block;">
+      </div>
+      <div class="col-md-4 reveal">
+        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&h=560&fit=crop&crop=center"
+             alt="Savana Brasileira" class="img-fluid w-100" style="height:280px;object-fit:cover;display:block;">
+      </div>
+      <div class="col-md-4 reveal">
+        <img src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=800&h=560&fit=crop&crop=center"
+             alt="Praias do Brasil" class="img-fluid w-100" style="height:280px;object-fit:cover;display:block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULÁRIO: Bootstrap form -->
+<section class="section form-section" id="contato">
+  <div class="container">
+    <div class="row g-0 align-items-stretch" style="box-shadow:var(--sombra-hover);">
+      <div class="col-lg-5 d-none d-lg-block">
+        <img src="img/Rio_de_Janeiro_Cristo_Redentor.jpg"
+             alt="Rio de Janeiro" class="form-contact-img">
+      </div>
+      <div class="col-lg-7" style="background:#fff;padding:4rem 3rem;">
+        <span class="eyebrow-label">Fale conosco</span>
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="gold-line"></div>
+        <form class="form-premium">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" class="form-control" placeholder="Seu nome">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="form-control" placeholder="seu@email.com">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" class="form-control" placeholder="Como podemos ajudar?">
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" class="form-control" placeholder="Escreva sua mensagem aqui..."></textarea>
+          </div>
+          <button type="button" class="btn-verde">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <span class="footer-brand">Brasil Cultural</span>
+        <p class="footer-desc">Um portal dedicado a celebrar a riqueza cultural, natural e histórica do maior país da América do Sul.</p>
+      </div>
+      <div class="col-sm-6 col-lg-2 offset-lg-2">
+        <span class="footer-heading">Páginas</span>
+        <ul class="footer-nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="culinaria.html">Culinária</a></li>
+          <li><a href="turismo.html">Turismo</a></li>
+          <li><a href="fauna.html">Fauna</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <span class="footer-heading">Sobre o Projeto</span>
+        <p class="footer-desc">Trabalho desenvolvido para a disciplina de Programação Web III.<br>Professor Ivan Souza.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© 2025 Brasil Cultural — Todos os direitos reservados</div>
+  </div>
+</footer>
+
+<button id="voltarTopo" onclick="voltarTopo()" aria-label="Voltar ao topo">↑</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
